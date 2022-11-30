@@ -1,6 +1,9 @@
 {
     "name": "@eisberg-labs/next-mongoose-session",
     "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
     "version": "1.0.0",
     "description": "Enables mongodb cached session for nextjs api routes and ssr pages (static and dynamic)",
     "main": "dist/index.js",
