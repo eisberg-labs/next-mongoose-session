@@ -1,0 +1,35 @@
+{
+  "name": "@eisberg-labs/typescript-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Repository template for typescript projects",
+  "main": "dist/index.js",
+  "files": ["dist/**", "package.json"],
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src/**/*",
+    "prettier": "prettier --write \"./(src|tests)/**/*.ts\"",
+    "tsc": "tsc",
+    "prepublishOnly": "npm run lint && npm run test && npm run prettier && npm run tsc"
+  },
+  "repository": "https://github.com/eisberg-labs/typescript-template.git",
+  "author": {
+    "name": "Ana Bujan - Eisberg Labs",
+    "email": "ana@eisberg-labs.com",
+    "url": "https://www.eisberg-labs.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eisberg-labs/typescript-template/issues"
+  },
+  "homepage": "https://github.com/eisberg-labs/typescript-template#readme",
+  "devDependencies": {
+    "@types/jest": "^29.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.27.0",
+    "jest": "^29.3.1",
+    "prettier": "^2.7.1",
+    "ts-jest": "^29.0.3"
+  }
+}
