@@ -1,8 +1,8 @@
 {
-  "name": "@eisberg-labs/typescript-template",
+  "name": "@eisberg-labs/next-mongoose-session",
   "version": "1.0.0",
   "private": true,
-  "description": "Repository template for typescript projects",
+  "description": "Enables mongodb cached session for nextjs api routes and ssr pages (static and dynamic)",
   "main": "dist/index.js",
   "files": ["dist/**", "package.json"],
   "scripts": {
@@ -12,7 +12,7 @@
     "tsc": "tsc",
     "prepublishOnly": "npm run lint && npm run test && npm run prettier && npm run tsc"
   },
-  "repository": "https://github.com/eisberg-labs/typescript-template.git",
+  "repository": "https://github.com/eisberg-labs/next-mongoose-session.git",
   "author": {
     "name": "Ana Bujan - Eisberg Labs",
     "email": "ana@eisberg-labs.com",
@@ -20,9 +20,15 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eisberg-labs/typescript-template/issues"
+    "url": "https://github.com/eisberg-labs/next-mongoose-session/issues"
   },
-  "homepage": "https://github.com/eisberg-labs/typescript-template#readme",
+  "homepage": "https://github.com/eisberg-labs/next-mongoose-session#readme",
+  "dependencies": {
+    "mongoose": "^6.7.4"
+  },
+  "peerDependencies": {
+    "next": "^12.0.0"
+  },
   "devDependencies": {
     "@types/jest": "^29.2.3",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
